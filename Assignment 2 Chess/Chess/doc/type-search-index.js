@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"components","l":"Bishop"},{"p":"components","l":"Board"},{"p":"chess","l":"Chess"},{"p":"components","l":"King"},{"p":"components","l":"Knight"},{"p":"components","l":"Pawn"},{"p":"components","l":"Piece"},{"p":"components","l":"Queen"},{"p":"components","l":"Rook"}];updateSearchResults();
