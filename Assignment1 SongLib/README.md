@@ -1,3 +1,5 @@
+# SongLib
+
 Done with a partner
 
 Focusing on the utiliziation of JavaFX and GUIs
