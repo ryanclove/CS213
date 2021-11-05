@@ -8,4 +8,4 @@ All songs added/edited/deleted were saved in a csv file called Song.csv (automat
 
 Was done using Ecplise IDE
 
-Grade: TBD/40
+Grade: 40/40
