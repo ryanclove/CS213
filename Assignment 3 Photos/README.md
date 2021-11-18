@@ -1,4 +1,6 @@
 # Assignment 3 - Photos
 
-Me:  
-Partner:
+Me:  Ryan Coslove
+Partner: Jason Dao
+
+Grade: TBD/225
