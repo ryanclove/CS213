@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.OpenAlbumController">
+   <children>
+      <Separator layoutX="450.0" orientation="VERTICAL" prefHeight="533.0" prefWidth="1.0" />
+      <ButtonBar layoutY="533.0" prefHeight="67.0" prefWidth="900.0">
+         <buttons>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButton" prefHeight="35.0" prefWidth="340.0" text="Add">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="editButton" mnemonicParsing="false" onAction="#editButton" prefHeight="35.0" text="Edit Tags">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="captionButton" mnemonicParsing="false" onAction="#captionButton" prefHeight="35.0" text="Caption/Re-Caption" />
+            <Button fx:id="moveButton" mnemonicParsing="false" onAction="#moveButton" prefHeight="35.0" text="Move">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="copyButton" mnemonicParsing="false" onAction="#copyButton" prefHeight="35.0" text="Copy">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButton" prefHeight="39.0" text="Delete">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </buttons>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </ButtonBar>
+      <Separator layoutY="533.0" prefHeight="1.0" prefWidth="900.0" />
+      <ToolBar layoutX="1.0" prefHeight="50.0" prefWidth="450.0">
+         <items>
+            <Label fx:id="albumName" prefHeight="38.0" prefWidth="335.0" text="Album Name:">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButton" prefHeight="30.0" prefWidth="92.0" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </items>
+      </ToolBar>
+      <ImageView fx:id="clickedImageView" fitHeight="302.0" fitWidth="416.0" layoutX="469.0" layoutY="13.0" pickOnBounds="true" />
+      <Button fx:id="previousPhotoButton" layoutX="465.0" layoutY="326.0" mnemonicParsing="false" onAction="#previousPhotoButton" prefHeight="39.0" prefWidth="68.0" text="&lt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextPhotoButton" layoutX="540.0" layoutY="326.0" mnemonicParsing="false" onAction="#nextPhotoButton" prefHeight="39.0" prefWidth="68.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="469.0" layoutY="380.0" text="Date/Time:" />
+      <Label fx:id="dateTime" layoutX="540.0" layoutY="380.0" prefHeight="18.0" prefWidth="342.0" />
+      <Label layoutX="485.0" layoutY="419.0" text="Caption:" />
+      <Label fx:id="caption" alignment="TOP_LEFT" layoutX="540.0" layoutY="410.0" prefHeight="35.0" prefWidth="342.0" />
+      <Label layoutX="499.0" layoutY="476.0" text="Tags:" />
+      <Label fx:id="tagsLabel" alignment="TOP_LEFT" layoutX="528.0" layoutY="455.0" prefHeight="67.0" prefWidth="342.0" />
+      <ListView fx:id="listView" layoutX="14.0" layoutY="67.0" prefHeight="457.0" prefWidth="423.0" />
+      <Button fx:id="displayPhotoButton" layoutX="711.0" layoutY="326.0" mnemonicParsing="false" onAction="#displayPhotoButton" prefHeight="40.0" prefWidth="164.0" text="Display Photo Externally" />
+   </children>
+</AnchorPane>

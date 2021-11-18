@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SearchController">
+   <children>
+      <Separator layoutX="450.0" orientation="VERTICAL" prefHeight="533.0" prefWidth="1.0" />
+      <ButtonBar layoutY="533.0" prefHeight="67.0" prefWidth="900.0">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <buttons>
+            <Button fx:id="createAlbumButton" mnemonicParsing="false" onAction="#createAlbumButton" prefHeight="35.0" prefWidth="176.0" text="Create Album from Search Results">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="562.0" />
+         </buttons>
+      </ButtonBar>
+      <Separator layoutY="533.0" prefHeight="1.0" prefWidth="900.0" />
+      <ToolBar layoutX="1.0" prefHeight="50.0" prefWidth="450.0">
+         <items>
+            <Label prefHeight="38.0" prefWidth="181.0" text="Search Results">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="151.0" />
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButton" prefHeight="30.0" prefWidth="92.0" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </items>
+      </ToolBar>
+      <ImageView fx:id="clickedImageView" fitHeight="302.0" fitWidth="416.0" layoutX="469.0" layoutY="13.0" pickOnBounds="true" />
+      <Button fx:id="previousPhotoButton" layoutX="597.0" layoutY="326.0" mnemonicParsing="false" onAction="#previousPhotoButton" prefHeight="39.0" prefWidth="68.0" text="&lt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextPhotoButton" layoutX="685.0" layoutY="326.0" mnemonicParsing="false" onAction="#nextPhotoButton" prefHeight="39.0" prefWidth="68.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="470.0" layoutY="380.0" text="Data/Time:" />
+      <Label fx:id="dateTime" layoutX="540.0" layoutY="380.0" prefHeight="17.0" prefWidth="342.0" />
+      <Label layoutX="485.0" layoutY="419.0" text="Caption:" />
+      <Label fx:id="caption" alignment="TOP_LEFT" layoutX="540.0" layoutY="410.0" prefHeight="35.0" prefWidth="342.0" />
+      <Label layoutX="499.0" layoutY="476.0" text="Tags:" />
+      <Label fx:id="tags" layoutX="528.0" layoutY="455.0" prefHeight="67.0" prefWidth="342.0" />
+      <ListView fx:id="listView" layoutX="14.0" layoutY="67.0" prefHeight="451.0" prefWidth="425.0" />
+      <Label fx:id="searchRes" layoutX="36.0" layoutY="67.0" prefHeight="50.0" prefWidth="162.0" text="No search results. Try again." textAlignment="CENTER" />
+   </children>
+</AnchorPane>
