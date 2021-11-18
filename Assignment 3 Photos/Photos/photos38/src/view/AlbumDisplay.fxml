@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumDisplayController">
+   <children>
+      <ButtonBar layoutY="539.0" prefHeight="67.0" prefWidth="900.0">
+        <buttons>
+          <Button fx:id="addNewAlbumButton" mnemonicParsing="false" onAction="#addAlbum" prefHeight="35.0" prefWidth="502.0" text="Add New Album">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="openAlbumButton" mnemonicParsing="false" onAction="#openAlbum" prefHeight="35.0" text="Open Album">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="renameAlbumButton" mnemonicParsing="false" onAction="#renameAlbum" prefHeight="35.0" text="Rename Album">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="deleteAlbumButton" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="35.0" text="Delete Album">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+        </buttons>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </ButtonBar>
+      <ToolBar prefHeight="50.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0">
+         <items>
+            <TextField fx:id="tag1" prefHeight="25.0" prefWidth="64.0" promptText="Tag1" />
+            <Label text="=" />
+            <TextField fx:id="value1" prefHeight="14.0" prefWidth="62.0" promptText="Value1" />
+            <ComboBox onAction="#disable" fx:id="choice" prefHeight="25.0" prefWidth="82.0" promptText="Choose" />
+            <TextField fx:id="tag2" layoutX="10.0" layoutY="22.0" prefHeight="25.0" prefWidth="64.0" promptText="Tag2" />
+            <Label fx:id="d" text="=" />
+            <TextField fx:id="value2" layoutX="144.0" layoutY="22.0" prefHeight="25.0" prefWidth="64.0" promptText="Value2" />
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="88.0" text="Search by tag" />
+            <Label prefHeight="17.0" prefWidth="18.0" />
+            <DatePicker fx:id="before" prefHeight="23.0" prefWidth="72.0" />
+            <Label text="to" />
+            <DatePicker fx:id="after" prefHeight="24.0" prefWidth="66.0" />
+            <Button mnemonicParsing="false" onAction="#searchDate" prefHeight="25.0" prefWidth="131.0" text="Search between Date" />
+            <Label prefHeight="17.0" prefWidth="13.0" />
+            <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="60.0" text="Log Out" />
+         </items>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </ToolBar>
+      <ListView fx:id="listView" accessibleRole="LIST_ITEM" layoutX="21.0" layoutY="109.0" prefHeight="424.0" prefWidth="857.0" />
+      <Label layoutX="25.0" layoutY="62.0" prefHeight="35.0" prefWidth="183.0" text="Albums:">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
