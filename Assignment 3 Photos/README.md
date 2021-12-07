@@ -3,4 +3,4 @@
 Me:  Ryan Coslove  
 Partner: Jason Dao
 
-Grade: TBD/225
+Grade: 221/225 (98.22%)
