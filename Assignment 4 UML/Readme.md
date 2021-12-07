@@ -1,3 +1,5 @@
 # UML for Online Discussion Forums
 
-Grade: TBD/35
+Grade: 27/35 (77%)
+
+Grading rubriic provided
