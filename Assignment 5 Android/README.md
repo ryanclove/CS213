@@ -4,5 +4,5 @@ Me and my partner chose to do Photos as our android project. Made with Android S
 
 Grade: TBD/200
 
-The files of this project (besides instructions) are in a seperate repo:
+The files of this project (besides instructions) are in a seperate repo:  
 https://github.com/ryanclove/CS213-Android-Project
