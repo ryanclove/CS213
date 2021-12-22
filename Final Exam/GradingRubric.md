@@ -13,7 +13,7 @@ Solution:
 [1] BookingOwner (name or id)  
 [1] Booking (id or confirmation number, date)  
 [3 pts] Booking ------ Flight  
-* 1..*  
+\* 1..*  
 [3 pts] Booking ------ Traveler  
 1 1..*  
 [3 pts] Booking ------ BookingOwner  
