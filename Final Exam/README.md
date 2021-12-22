@@ -2,4 +2,4 @@
 
 125 pts (flexed to 250 to make 25% of class grade)
 
-My grade: TBD/250
+My grade: 189/250 (75.6%)
