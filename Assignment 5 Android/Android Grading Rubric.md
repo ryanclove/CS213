@@ -9,13 +9,13 @@ Grader Name: Anindita Chavan
       20/20 Display albums in list  
       10/10 Persistence across multiple launches of app  
       
- /40 Open,create,delete,rename albums  
+ 40/40 Open,create,delete,rename albums  
      10/10 Open  
      10/10 Create  
      10/10 Delete  
      10/10 Rename  
 
- /40 Add,remove,display photo  
+ 40/40 Add,remove,display photo  
      10/10 Add  
      10/10 Remove  
      10/10 Display screen for single photo  
